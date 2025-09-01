@@ -1,0 +1,31 @@
+class Person {
+    // private variable
+    private String name;
+    // public setter
+    public void setName(String name) {
+        this.name = name;
+    }
+    // public getter
+    public String getName() {
+        return this.name;
+    }
+    // 🔹 PRIVATE METHOD
+    private void greet() {
+        System.out.println("Hello, my name is " + name);
+    }
+    // public method to access private method
+    public void introduce() {
+        greet();  // calling private method from inside
+    }
+}
+public class PrivateMethodExample {
+    public static void main(String[] args) {
+        Person p1 = new Person();
+        p1.setName("Teju");
+        p1.introduce(); // PRIVATE METHOD CALLED USING INTRODUCE(PUBLIC)
+    }
+}
+
+OUTPUT:
+Hello, my name is Teju
+
