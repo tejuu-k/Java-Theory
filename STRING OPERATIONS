@@ -1,0 +1,46 @@
+public class StringOperations {
+    public static void main(String[] args) {
+        // Declare two strings
+        String str1 = "Hello";
+        String str2 = "World";
+        // 1. Concatenation (joining two strings)
+        String result = str1 + " " + str2; 
+        System.out.println("Concatenation: " + result);
+        // 2. Length of string
+        System.out.println("Length of str1: " + str1.length());
+        // 3. Convert to uppercase
+        System.out.println("Uppercase str1: " + str1.toUpperCase());
+        // 4. Convert to lowercase
+        System.out.println("Lowercase str2: " + str2.toLowerCase());
+        // 5. Character at a specific index
+         System.out.println("Character at index 1 in str1: " + str1.charAt(1)); // e
+        // 6. Substring (part of a string)
+        System.out.println("Substring of str2 (1 to 4): " + str2.substring(1, 4)); // orl
+        // 7. String comparison (equals)
+        System.out.println("Is str1 equal to str2? " + str1.equals(str2));
+        // 8. String comparison (ignore case)
+        System.out.println("Is 'hello' equal to str1 (ignore case)? " + "hello".equalsIgnoreCase(str1));
+        // 9. Check if string contains another string
+        System.out.println("Does str1 contain 'lo'? " + str1.contains("lo"));
+        // 10. Replace characters
+        System.out.println("Replace 'l' with 'x' in str1: " + str1.replace('l', 'x'));
+        // 11. Trim spaces
+        String str3 = "   Java Programming   ";
+        System.out.println("Before trim: '" + str3 + "'");
+        System.out.println("After trim: '" + str3.trim() + "'");
+    }
+}
+OUTPUT:
+Concatenation: Hello World
+Length of str1: 5
+Uppercase str1: HELLO
+Lowercase str2: world
+Character at index 1 in str1: e
+Substring of str2 (1 to 4): orl
+Is str1 equal to str2? false
+Is 'hello' equal to str1 (ignore case)? true
+Does str1 contain 'lo'? true
+Replace 'l' with 'x' in str1: Hexxo
+Before trim: '   Java Programming   '
+After trim: 'Java Programming'
+
